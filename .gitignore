@@ -1,0 +1,31 @@
+# JARs aren't checked in, they are fetched by sbt
+/lib/*.jar
+/test/files/codelib/*.jar
+/test/files/lib/*.jar
+/test/files/speclib/instrumented.jar
+/tools/*.jar
+
+# other
+/out/
+/bin/
+/sandbox/
+
+# sbt's target directories
+/target/
+/project/**/target/
+/test/macro-annot/target/
+/test/files/target/
+/test/target/
+/build-sbt/
+local.sbt
+jitwatch.out
+
+**/.cache
+/.idea
+/.settings
+/.vscode
+
+# metals
+.metals
+.bloop
+project/**/metals.sbt

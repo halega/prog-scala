@@ -5,6 +5,6 @@ object Main extends App {
   println(mark.name)
   println(mark.welcome("n"))
 
-  println(new Person("Bob").presentYourself)
-  println(new Person("Martin", 18).presentYourself)
+  println(new Teacher("Bob").hello("Martin"))
+  println(new Student("Martin", 18, 1).hello("Bob"))
 }

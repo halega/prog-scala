@@ -1,5 +1,5 @@
-class Robot(val name: String = "Unknown") {
-  def welcome(n: String) = s"Welcome $n! My name is $name"
+abstract class Robot(val name: String = "Unknown") {
+  def welcome(n: String): String
 }
 
 class ItalianRobot(name: String) extends Robot(name) {

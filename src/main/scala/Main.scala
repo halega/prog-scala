@@ -1,9 +1,9 @@
 object Main extends App {
-  val tom = new Robot("Tom")
-  val unknown = new Robot
+  val tom = new ItalianRobot("Tom")
+  val mark = new EnglishRobot("Mark", "USA")
   println(tom.name)
-  println(unknown.name)
-  println(new Robot().welcome("n"))
+  println(mark.name)
+  println(mark.welcome("n"))
 
   println(new Person("Bob").presentYourself)
   println(new Person("Martin", 18).presentYourself)

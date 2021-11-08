@@ -1,14 +1,15 @@
 import org.scalatest.flatspec.AnyFlatSpec
 
 class RobotTest extends AnyFlatSpec {
-  "A robot" should "welcome by name" in {
+  "An english robot" should "welcome by name" in {
     val name = "Tom"
+    val country = "USA"
     val n = "Stas"
-    assert(new Robot(name).welcome(n) == s"Welcome $n! My name is $name")
+    assert(new EnglishRobot(name, country).welcome(n) == s"Welcome $n, I am $name from the country of $country!")
   }
 
-  "A robot" should "says his name" in {
+  "An italian robot" should "says his name" in {
     val name = "Robert"
-    assert(new Robot(name).welcome("Kate").contains(s"My name is $name"))
+    assert(new ItalianRobot(name).welcome("Kate").contains(s"Il mio nome e' $name"))
   }
 }

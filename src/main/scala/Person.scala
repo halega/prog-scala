@@ -4,7 +4,7 @@ abstract class Person(name: String, age: Int = 0) {
 }
 
 class Teacher(name: String, age: Int = 0) extends Person(name, age) {
-  def hello(name: String) = s"Hello, $name! I'm a teacher $name, $age years old."
+  def hello(name: String) = s"Hello, $name! I'm a teacher ${this.name}, $age years old."
 }
 
 class Student(name: String, age: Int = 0, ID: Int = 0) extends Person(name, age) {

@@ -7,4 +7,6 @@ object Main extends App {
 
   println(new Teacher("Bob").hello("Martin"))
   println(new Student("Martin", 18, 1).hello("Bob"))
+
+  new Rational(1, 2)
 }

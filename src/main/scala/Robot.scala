@@ -11,3 +11,11 @@ class ItalianRobot(n: String) extends Robot(n) {
 class EnglishRobot(name: String, country: String) extends Robot(name) {
   override def welcome(n: String): String = s"Welcome $n, I am $name from the country of $country!"
 }
+
+abstract class SilentRobot {
+  def welcome(name: String): String
+}
+
+class MyRobot extends SilentRobot {
+  def welcome(name: String): String = s"Hi $name"
+}

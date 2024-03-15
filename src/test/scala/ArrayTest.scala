@@ -9,6 +9,10 @@ class ArrayTest extends AnyFlatSpec with Matchers {
   }
 
   "assert.sameElements" should "test array equality structurally" in {
-    assert(Array(1, 2) sameElements Array(1, 2))
+    assert(Array(1, 2).toSeq sameElements Array(2, 1).toSeq)
+  }
+
+  "Array" should "be equal to other Array" in {
+    Array(1, 2).toSeq shouldEqual Array(2, 1).toSeq
   }
 }

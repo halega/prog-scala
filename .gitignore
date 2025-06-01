@@ -30,3 +30,4 @@ jitwatch.out
 .metals
 .bloop
 project/**/metals.sbt
+project/project/
